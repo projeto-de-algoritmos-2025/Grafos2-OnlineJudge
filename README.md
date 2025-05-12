@@ -32,6 +32,44 @@ Você **pode conectar qualquer par de pontos**, e deseja que **todos os pontos f
   
 Nós resolvemos resolver das duas formas e chegamos a conclusão que o algoritmo de Prim se comportou melhor.
 
+---
+
+### 🔗 [1568: Minimum Number of Days to Disconnect Island](https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/)
+
+### Resumo:
+- Dada uma grade 2D de valores binários (0 = água, 1 = terra), determine o **número mínimo de dias** necessários para **desconectar** a ilha (deixar de haver uma única massa de terra conectada ortogonalmente).
+- Em cada dia, é possível remover uma única célula de terra, transformando-a em água.
+- Uma ilha está desconectada se houver **mais de um componente conexo de terra** ou **nenhum**.
+
+- Nível de dificuldade: Médio.
+
+🧠 Esse é um problema que pode ser resolvido com **Busca em Profundidade (DFS)** para contar **componentes conexos**. A ideia se aproxima do conceito de **SCC (Componentes Fortemente Conexas)**, adaptado para grafos não direcionados representados como uma grade.
+
+
+
+### 🧠 Algoritmo utilizado:
+- **DFS (Depth-First Search)** para contar o número de componentes conexos de terra (`1`s).
+- A cada iteração, simula a remoção de uma célula e verifica se a ilha se desconecta.
+- Estratégia:
+  1. Verificar se a ilha **já está desconectada** no início.
+  2. Testar a remoção de **cada célula individualmente**.
+  3. Se nenhuma célula for suficiente, a resposta é `2`.
+
+
+
+### ⚙️ Estrutura principal:
+- `countIslands(grid, gridSize, gridColSize)`:
+  - Conta quantas componentes conexas existem na grade usando DFS.
+  - Marca os nós visitados para não repetir visitas.
+- `minDays(grid, gridSize, gridColSize)`:
+  - Primeiramente, verifica se a ilha já está desconectada.
+  - Depois, para cada célula `1`, a remove temporariamente, verifica se há mais de um componente e restaura.
+  - Se nenhuma célula individual causa a desconexão, retorna `2`.
+
+---
+
+
+
 ## Screenshots
 - Problema 1584 com Kruskal
 <img width="734" alt="1584 Kruskal" src="img\kruskal.png">
@@ -39,6 +77,8 @@ Nós resolvemos resolver das duas formas e chegamos a conclusão que o algoritmo
 - Problema 1584 com Prim 
 <img width="734" alt="1585 Prim" src="img\prim.png">
 
+- Problema 1568 com SCC 
+<img width="734" alt="1585 Prim" src="img\scc.png">
 
 ## Instalação 
 
