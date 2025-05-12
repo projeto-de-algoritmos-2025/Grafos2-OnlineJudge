@@ -29,6 +29,7 @@ Você **pode conectar qualquer par de pontos**, e deseja que **todos os pontos f
 
 - **Kruskal** com Union-Find, ou
 - **Prim** com Heap (mais eficiente nesse caso, pois o número de arestas possíveis é grande).
+  
 Nós resolvemos resolver das duas formas e chegamos a conclusão que o algoritmo de Prim se comportou melhor.
 
 ## Screenshots
