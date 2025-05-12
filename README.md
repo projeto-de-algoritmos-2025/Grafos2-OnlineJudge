@@ -12,22 +12,30 @@
 ## Sobre 
 Para desenvolver o conteúdo abordado no tópico de Grafos 2, a dupla selecionou três exercícios em um juiz online - o LeetCode -, sendo eles, dois de nível difícil e um de nível médio. Para obter mais informações sobre os enunciados propostos, basta clicar no link que aparece no título de cada um.
 
-## Sobre 
-Para desenvolver o conteúdo abordado no tópico de Grafos 1, a dupla selecionou três exercícios em um juiz online - o LeetCode -, sendo eles, dois de nível difícil e um de nível médio. Para obter mais informações sobre os enunciados propostos, basta clicar no link que aparece no título de cada um.
-
-### 🔗 []()
+### 🔗 [1584: Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/description/)
  Resumo:
-- 
-- Nível de dificuldade: .
+- Dado um conjunto de pontos em um plano 2D, conecte todos os pontos com o **menor custo possível**, onde:
 
-🧠 .
+- O custo de conectar dois pontos \((x1, y1)\) e \((x2, y2)\) é a **distância de Manhattan**:  
+  \[
+  |x1 - x2| + |y1 - y2|
+  \]
+
+Você **pode conectar qualquer par de pontos**, e deseja que **todos os pontos fiquem conectados direta ou indiretamente**.
+
+- Nível de dificuldade: Médio.
+
+🧠 Esse é um problema clássico de **Árvore Geradora Mínima (Minimum Spanning Tree)**, que pode ser resolvido usando:
+
+- **Kruskal** com Union-Find, ou
+- **Prim** com Heap (mais eficiente nesse caso, pois o número de arestas possíveis é grande).
 
 ## Screenshots
-- Problema 2608
-<img width="734" alt="Shortest cycle in a graph" src="">
+- Problema 1584 com Prim
+<img width="734" alt="1584 prim" src="">
 
-- Problema 1579 
-<img width="734" alt="Remove Max Number of Edges to Keep Graph Fully Traversable" src="">
+- Problema 1584 com Kruskal 
+<img width="734" alt="1585 kruskal" src="">
 
 - Problema 785 
 <img width="734" alt="Is a Graph Bipartite" src="">
