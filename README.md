@@ -29,19 +29,15 @@ Você **pode conectar qualquer par de pontos**, e deseja que **todos os pontos f
 
 - **Kruskal** com Union-Find, ou
 - **Prim** com Heap (mais eficiente nesse caso, pois o número de arestas possíveis é grande).
+Nós resolvemos resolver das duas formas e chegamos a conclusão que o algoritmo de Prim se comportou melhor.
 
 ## Screenshots
-- Problema 1584 com Prim
-<img width="734" alt="1584 prim" src="">
+- Problema 1584 com Kruskal
+<img width="734" alt="1584 Kruskal" src="img\kruskal.png">
 
-- Problema 1584 com Kruskal 
-<img width="734" alt="1585 kruskal" src="">
+- Problema 1584 com Prim 
+<img width="734" alt="1585 Prim" src="img\prim.png">
 
-- Problema 785 
-<img width="734" alt="Is a Graph Bipartite" src="">
-
-- Problema 207
-<img width="734" alt="Course Schedule" src="">
 
 ## Instalação 
 
