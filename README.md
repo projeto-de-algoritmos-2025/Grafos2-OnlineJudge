@@ -68,6 +68,37 @@ Nós resolvemos resolver das duas formas e chegamos a conclusão que o algoritmo
 
 ---
 
+### 🔗 [743: Network Delay Time](https://leetcode.com/problems/network-delay-time/)
+
+### Resumo:
+- Dado um grafo **dirigido e ponderado**, com `n` nós numerados de `1` a `n`, e uma lista de arestas no formato `[u, v, w]`, que indica um tempo `w` para o sinal ir de `u` para `v`.
+- Um sinal é enviado a partir de um nó inicial `k`.
+- O objetivo é calcular o **tempo mínimo necessário** para que **todos os nós recebam o sinal**.
+- Se **algum nó não for alcançável**, retorne `-1`.
+
+- Nível de dificuldade: Médio.
+
+- Esse é um problema clássico de **caminhos mínimos a partir de uma origem** que pode ser resolvido com **Dijkstra usando min-heap**.
+
+### 🧠 Algoritmo utilizado:
+- **Dijkstra com Min-Heap (Priority Queue)** para otimizar a escolha do próximo nó com menor custo acumulado.
+- Estrutura usada:
+  - **Matriz de adjacência** para armazenar pesos das arestas.
+  - **Heap mínima** personalizada para priorizar nós com menor tempo acumulado.
+- A estratégia é:
+  1. Inicializar distâncias com infinito, exceto o nó inicial.
+  2. Usar a heap para visitar o nó com menor distância atual.
+  3. Relaxar as arestas para os vizinhos e atualizar a heap.
+  4. Após o término, retornar a maior distância encontrada, se todos os nós forem alcançados.
+
+### ⚙️ Estrutura principal:
+- `networkDelayTime(times, timesSize, timesColSize, n, k)`:
+  - Recebe a lista de arestas, o número de nós `n` e o nó inicial `k`.
+  - Retorna o tempo total para o sinal alcançar todos os nós, ou `-1` se algum nó for inalcançável.
+- Heap mínima personalizada:
+  - Suporte a inserção (`push`), remoção do menor (`pop`) e reorganização (`heapify`).
+  - Guarda pares `(nó, tempo acumulado)`.
+
 
 
 ## Screenshots
@@ -79,6 +110,9 @@ Nós resolvemos resolver das duas formas e chegamos a conclusão que o algoritmo
 
 - Problema 1568 com SCC 
 <img width="734" alt="1585 Prim" src="img\scc.png">
+
+- Problema 743 com Dijkstra 
+<img width="734" alt="1585 Prim" src="img\dijsktra.png">
 
 ## Instalação 
 
