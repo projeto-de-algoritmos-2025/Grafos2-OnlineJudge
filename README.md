@@ -109,10 +109,10 @@ Nós resolvemos resolver das duas formas e chegamos a conclusão que o algoritmo
 <img width="734" alt="1585 Prim" src="img\prim.png">
 
 - Problema 1568 com SCC 
-<img width="734" alt="1585 Prim" src="img\scc.png">
+<img width="734" alt="1568 SCC" src="img\scc.png">
 
 - Problema 743 com Dijkstra 
-<img width="734" alt="1585 Prim" src="img\dijsktra.png">
+<img width="734" alt="743 Dijkstra" src="img\dijkstra.png">
 
 ## Instalação 
 
