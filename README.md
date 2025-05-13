@@ -112,7 +112,7 @@ Nós resolvemos resolver das duas formas e chegamos a conclusão que o algoritmo
 <img width="734" alt="1568 SCC" src="img\scc.png">
 
 - Problema 743 com Dijkstra 
-<img width="734" alt="743 Dijkstra" src="img\dijkstra.png">
+<img width="734" alt="743 Dijkstra" src="img\743.png">
 
 ## Instalação 
 
