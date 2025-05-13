@@ -25,7 +25,8 @@ Você **pode conectar qualquer par de pontos**, e deseja que **todos os pontos f
 
 - Nível de dificuldade: Médio.
 
-🧠 Esse é um problema clássico de **Árvore Geradora Mínima (Minimum Spanning Tree)**, que pode ser resolvido usando:
+### 🧠 Algoritmo utilizado:
+Esse é um problema clássico de **Árvore Geradora Mínima (Minimum Spanning Tree)**, que pode ser resolvido usando:
 
 - **Kruskal** com Union-Find, ou
 - **Prim** com Heap (mais eficiente nesse caso, pois o número de arestas possíveis é grande).
@@ -42,9 +43,6 @@ Nós resolvemos resolver das duas formas e chegamos a conclusão que o algoritmo
 - Uma ilha está desconectada se houver **mais de um componente conexo de terra** ou **nenhum**.
 
 - Nível de dificuldade: Médio.
-
-🧠 Esse é um problema que pode ser resolvido com **Busca em Profundidade (DFS)** para contar **componentes conexos**. A ideia se aproxima do conceito de **SCC (Componentes Fortemente Conexas)**, adaptado para grafos não direcionados representados como uma grade.
-
 
 
 ### 🧠 Algoritmo utilizado:
